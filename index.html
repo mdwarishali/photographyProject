@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Photography Website using Bootstrap</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/themify-icons/themify-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <section id="header">
+      <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <h2>MONTREAL</h2>
+            <!-- <img src="assets/images/logo.png" class="img-fluid" /> -->
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="ti-align-justify"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#special">Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Home section -->
+
+    <section id="home" class="home pt-5 overflow-hidden">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="home-banner home-banner-1">
+              <div class="home-banner-text">
+                <h2>
+                  Photography for <br />
+                  Adventurous Souls & <br />Rebels at Heart
+                </h2>
+                <a href="" class="btn btn-danger text-uppercase mt-4"
+                  >View Story</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="home-banner home-banner-2">
+              <div class="home-banner-text">
+                <h2>
+                  Photography for <br />
+                  Adventurous Souls & <br />Rebels at Heart
+                </h2>
+                <a href="" class="btn btn-danger text-uppercase mt-4"
+                  >View Story</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true">
+            <span class="ti-angle-left slider-icon"></span>
+          </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true">
+            <span class="ti-angle-right slider-icon"></span>
+          </span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- offer section -->
+
+      <div class="offers">
+        <div class="container">
+          <div class="row">
+            <!-- Offer Box One -->
+            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+              <a href="#">
+                <div class="offer-box text-center position-relative">
+                  <div class="offer-inner">
+                    <div class="offer-image position-relative overflow-hidden">
+                      <img
+                        src="assets/images/offer1.jpg"
+                        alt="offers"
+                        class="img-fluid"
+                      />
+                      <div class="offer-overlay"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- offer Box Two -->
+            <div
+              class="col-sm-6 col-lg-4 mb-lg-0 mb-4 d-flex flex-column justify-content-between"
+            >
+              <a href="#">
+                <div
+                  class="offer-box text-center position-relative mb-4 mb-sm-0 mb-lg-0"
+                >
+                  <div class="offer-inner">
+                    <div class="offer-image position-relative overflow-hidden">
+                      <img
+                        src="assets/images/offer2.jpg"
+                        alt="offers"
+                        class="img-fluid"
+                      />
+                      <div class="offer-overlay"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="offer-box text-center position-relative">
+                  <div class="offer-inner">
+                    <div class="offer-image position-relative overflow-hidden">
+                      <img
+                        src="assets/images/offer3.jpg"
+                        alt="offers"
+                        class="img-fluid"
+                      />
+                      <div class="offer-overlay"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Offer Box Three -->
+            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+              <a href="#">
+                <div class="offer-box text-center position-relative">
+                  <div class="offer-inner">
+                    <div class="offer-image position-relative overflow-hidden">
+                      <img
+                        src="assets/images/offer4.jpg"
+                        alt="offers"
+                        class="img-fluid"
+                      />
+                      <div class="offer-overlay"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="photographer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-5 mb-lg-0 mt-5 text-center">
+              <p class="lorem-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, culpa officia enim sunt officiis, provident corporis
+                minus unde fugit porro rem velit reiciendis! Cum perspiciatis
+                alias non aut incidunt facere. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Velit, quasi.
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-7 mb-lg-0 mt-5">
+              <div class="photographer-img">
+                <img src="assets/images/photographer.webp" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="love couple overflow-hidden">
+      <div class="love-banner">
+        <div class="love-banner-text">
+          <h2>Do it Your Way. <br />Elop in Your <br/> Dream <br/> Location</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products section -->
+
+    <section id="products" class="products">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="headline text-center mb-5">
+              <h2 class="pb-3 position-relative d-inline-block">
+                Pacific Northwest or Anywhere Beyond
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <img
+                    src="assets/images/p1.jpg"
+                    class="img-fluid product-image-first"
+                  />
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">Photography</h3>
+                  <p class="mb-0 amount">$400.00 <del>$580.00</del></p>
+                  <div class="py-1">
+                    <span class="ti-star active"></span>
+                    <span class="ti-star active"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                  </div>
+                  <button type="button" class="add_to_card">Read More</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <img
+                    src="assets/images/p6.jpg"
+                    class="img-fluid product-image-first"
+                  />
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">Photography</h3>
+                  <div class="py-1">
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                  </div>
+                  <button type="button" class="add_to_card">Read More</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <img
+                    src="assets/images/p3.jpg"
+                    class="img-fluid product-image-first"
+                  />
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">Photography</h3>
+                  <div class="py-1">
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                  </div>
+                  <button type="button" class="add_to_card">Read More</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <img
+                    src="assets/images/p4.jpg"
+                    class="img-fluid product-image-first"
+                  />
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">Photography</h3>
+                  <div class="py-1">
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                  </div>
+                  <button type="button" class="add_to_card">Read More</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <img
+                    src="assets/images/p5.jpg"
+                    class="img-fluid product-image-first"
+                  />
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">Photography</h3>
+                  <div class="py-1">
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                  </div>
+                  <button type="button" class="add_to_card">Read More</button>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <a href="#" class="d-block text-center mb-4">
+              <div class="product-list">
+                <div class="product-image position-relative">
+                  <img
+                    src="assets/images/p7.jpg"
+                    class="img-fluid product-image-first"
+                  />
+                </div>
+                <div class="product-name pt-3">
+                  <h3 class="text-capitalize">Photography</h3>
+                  <div class="py-1">
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                    <span class="ti-star"></span>
+                  </div>
+                  <button type="button" class="add_to_card">Read More</button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- up to 75% off -->
+
+        <div class="overflow-hidden my-5">
+          <div class="row">
+            <div class="col-sm-12 up_to_off">
+              <img
+                src="assets/images/lg.jpg"
+                alt="offers"
+                class="img-fluid w-100"
+              />
+              <div class="up_to_content">
+                <h2>Are you ready for your Adventure?</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special section -->
+
+    <section id="special" class="special">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="headline text-center mb-5">
+              <h2 class="pb-3 position-relative d-inline-block">
+                BEHIND THE CAMERA LENS
+              </h2>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-7 text-center text-lg-start">
+            <div class="countdown-container">
+              <h2 class="text-uppercase">Welcome friend, my name is Vanessa</h2>
+              <p class="my-4">
+                A wedding & elopement photographer by day, an event planner and
+                location scout by night. You’d think I’m joking right? I am not.
+                My name is Vanessa, I live in Portland, Oregon with my partner
+                and our two rescue dogs. When I’m not photographing weddings, or
+                helping clients plan an elopement - you’ll find me hiking up in
+                the mountains, or chilling at the beach with the pups.
+              </p>
+              <p class="my-3">
+                If you're planning to get married and want to do it your way - I'm here to guide you through the whole process!
+              </p>
+              <ul class="list-unstyled countdown-counter">
+                <li><span class="fs-1 d-block" id="days">00</span>Days</li>
+                <li><span class="fs-1 d-block" id="hours">00</span>Hr</li>
+                <li><span class="fs-1 d-block" id="min">00</span>Min</li>
+                <li><span class="fs-1 d-block" id="sec">00</span>Sec</li>
+              </ul>
+              <span class="countdown-price h3 d-block mb-4"
+                >$420.00 <del>$670.00</del></span
+              >
+              <button type="button" class="btn btn-info">More About Me</button>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-5">
+            <div class="special-img position-relative">
+              <img
+                src="assets/images/photographersale.webp"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial section -->
+
+    <section id="testimonial" class="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="headline text-center mb-5">
+              <h2 class="pb-3 position-relative d-inline-block">Testimonial</h2>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-8 offset-lg-2 text-center">
+            <div id="carouselExampleIndicatorsTwo" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicatorsTwo"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicatorsTwo"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="testimonial-wrapper">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <img
+                          src="assets/images/user.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="username">
+                        <h3>Martoin Johe, Co-Founder / CEO</h3>
+                        <span>FastCompany ltd.</span>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Aperiam repellendus nulla excepturi non
+                          voluptatem quam quasi adipisci maiores a! Voluptatibus
+                          possimus quaerat, fuga error ducimus recusandae rem
+                          veritatis voluptatem consequatur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-wrapper">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <img
+                          src="assets/images/user2.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="username">
+                        <h3>Martoin Johe, Co-Founder / CEO</h3>
+                        <span>FastCompany ltd.</span>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Aperiam repellendus nulla excepturi non
+                          voluptatem quam quasi adipisci maiores a! Voluptatibus
+                          possimus quaerat, fuga error ducimus recusandae rem
+                          veritatis voluptatem consequatur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicatorsTwo"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                  <span class="ti-angle-left slider-icon"></span>
+                </span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicatorsTwo"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                  <span class="ti-angle-right slider-icon"></span>
+                </span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <div class="container">
+          <div class="mb-5 text-center">
+            <h4>Let's Start a Conversation!</h4>
+            <h2 class="fw-bold">Contact Us</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-5 col-md-5">
+              <h4 class="fw-bold">Contact Info</h4>
+              <ul class="info list-unlisted">
+                <li class="d-flex align-iten-center">
+                  <span class="pe-3 ti-location-pin fs-5"></span>
+                  <p><a href="">Lorem ipsum dolor sit amet consectetur.</a></p>
+                </li>
+                <li class="d-flex align-item-center">
+                  <span class="pe-3 ti-mobile fs-5"></span>
+                  <p><a href="">+91 91027 38352</a></p>
+                </li>
+                <li class="d-flex align-item-center">
+                  <span class="pe-3 ti-envelope fs-5"></span>
+                  <p><a href="">Warish123@gmail.com</a></p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-7 col-md-7 pt-lg-0 pt-md-0 pt-4">
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        id="name"
+                        placeholder="Your Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        id="email"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea
+                        class="textarea"
+                        name="message"
+                        cols="30"
+                        id="message"
+                        placeholder="Enter your message"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button class="btn btn-danger">
+                      <span class="ti-rocket pe-2 fs-5"></span>Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+
+    <footer>
+      <div class="p-3 copyright">
+        <div class="contailner">
+          <div class="row align-item-center">
+            <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-start">
+              <p class="my-0">
+                copyright @ 2024 <a href="#">photographer</a> All Rights
+                Reserved
+              </p>
+            </div>
+            <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-end">
+              <p>Designed by <a href="#" target="_blank">Warishkhan</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Main js -->
+    <script src="main.js"></script>
+  </body>
+</html>
